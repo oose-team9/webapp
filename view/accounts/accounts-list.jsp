@@ -8,9 +8,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>급여-계좌 관리</title>
 </head>
 <body>
-
+    <input type="button" value="등록" onclick="location.href='/front/accounts/create'">
+    <input type="button" value="삭제" onclick="location.href='/front/accounts/delete'">
+    <input type="button" value="뒤로 가기" onclick="location.href='/front/'">
 </body>
 </html>

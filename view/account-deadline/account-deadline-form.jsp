@@ -8,9 +8,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>급여-계좌 신청기간 등록</title>
 </head>
 <body>
-
+    <input type="button" value="등록" onclick="location.href='/front/account-deadline/create'">
+    <input type="button" value="취소" onclick="location.href='/front/account-deadline/read'">
 </body>
 </html>
