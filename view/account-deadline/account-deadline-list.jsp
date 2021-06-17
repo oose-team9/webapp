@@ -11,6 +11,7 @@
     <title>급여-계좌 신청기간 관리</title>
 </head>
 <body>
+    <h1> 급여 계좌 신청기간은 ${deadline.startDay} ~ ${deadline.endDay} 입니다. </h1>
     <input type="button" value="등록" onclick="location.href='/front/account-deadline/create'">
     <input type="button" value="뒤로 가기" onclick="location.href='/front/'">
 </body>
