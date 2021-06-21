@@ -1,4 +1,5 @@
-<%--
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page import="domain.AccountDeadline" %><%--
   Created by IntelliJ IDEA.
   User: 박유경
   Date: 2021-06-14

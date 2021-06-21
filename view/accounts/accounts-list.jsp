@@ -13,9 +13,11 @@
 </head>
 <body>
     <h1>급여 계좌</h1>
+    <form action="delete" method="post" id="delete">
     <table width="700" border="1">
         <thead>
         <tr>
+            <th>선택</th>
             <th>no</th>
             <th>부서</th>
             <th>사번</th>
@@ -25,20 +27,23 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
             <c:forEach var="acc" items="${accounts}" varStatus="status">
+            <tr>
+                <td><input type="checkbox" name="chk" value="${acc.id}"></td>
                 <td>${status.count}</td>
                 <td>${acc.departmentName}</td>
                 <td>${acc.empNo}</td>
                 <td>${acc.name}</td>
                 <td>${acc.bankName}</td>
                 <td>${acc.accNum}</td>
+            </tr>
             </c:forEach>
-        </tr>
         </tbody>
     </table>
+        <button type="submit">삭제</button>
+    </form>
     <input type="button" value="등록" onclick="location.href='/front/accounts/create'">
-    <input type="button" value="삭제" onclick="location.href='/front/accounts/delete'">
     <input type="button" value="뒤로 가기" onclick="location.href='/front/'">
+
 </body>
 </html>

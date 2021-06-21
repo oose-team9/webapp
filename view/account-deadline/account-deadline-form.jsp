@@ -12,7 +12,12 @@
     <title>급여-계좌 신청기간 등록</title>
 </head>
 <body>
-    <input type="button" value="등록" onclick="location.href='/front/account-deadline/create'">
-    <input type="button" value="취소" onclick="location.href='/front/account-deadline/read'">
+    <h1>급여계좌 신청기간 등록</h1>
+    <form action="/front/account-deadline/create" method="post">
+        시작일 <input type="date" name="start"/>
+        마감일 <input type="date" name="end"/>
+        <button type="submit">등록</button>
+    </form>
+    <input type="button" value="취소" onclick="location.href='/front/account-deadline/read'"/>
 </body>
 </html>
