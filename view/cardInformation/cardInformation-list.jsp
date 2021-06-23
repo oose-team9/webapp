@@ -4,14 +4,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="utf-8">
 <title>Insert title here</title>
 </head>
 <body>
 	<table width="700" border="3" bordercolor="lightgray" align="center">
 		<thead>
 			<tr>
-				<td>no</td>
 				<td>카드번호</td>								
 				<td>은행</td>
 				<td>계좌번호</td>
@@ -21,15 +20,14 @@
 			</tr>
 		</thead>		
 		<c:forEach var="information" items="${informations}">
-			<tr>
-				<td>${information.id}</td>						
+			<tr>					
 				<td>${information.cardNumber}</td>								
 				<td>${information.bank}</td>
 				<td>${information.accountNumber}</td>
 				<td>${information.password}</td>
 				<td>${information.employeeNo}</td>
 				<td>
-				<form action="/Accountancy/front/cardInformation/delete?id=${information.id}" method="post">
+				<form action="/Accountancy/front/cardInformation/delete?id=${information.cardNumber}" method="post">
 				<button type="submit">삭제</button>
 				</form>
 				</td>
