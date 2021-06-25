@@ -27,7 +27,7 @@
 				<td>${information.password}</td>
 				<td>${information.employeeNo}</td>
 				<td>
-				<form action="/Accountancy/front/cardInformation/delete?id=${information.cardNumber}" method="post">
+				<form action="/Accountancy/front/cardInformation/delete?cardNumber=${information.cardNumber}" method="post">
 				<button type="submit">삭제</button>
 				</form>
 				</td>
